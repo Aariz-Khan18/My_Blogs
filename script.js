@@ -3,13 +3,12 @@ const myData = {
     
     aboutText: `Computer Science Engineering student writing about technology, systems, and real learning experiences.`,
 
-    // 🔥 Your Strategic Roadmap Blogs 🔥
     blogs: [
         {
             category: "Foundations",
             title: "How Computers Actually Work (Simple Explanation)",
             excerpt: "Breaking down the CPU, RAM, Storage, and Logic Gates. Here is what I understood about the core hardware powering our digital world.",
-            link: "https://medium.com/@muhammadaarizkhansocial" 
+            link: "https://muhammadaarizkhansocial.medium.com/how-computers-actually-work-simple-detailed-explanation-c1395c14da6a" 
         },
         {
             category: "Systems",
