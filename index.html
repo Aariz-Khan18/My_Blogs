@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Aariz Khan | Software Engineer & Tech Blogger</title>
-    <meta name="description" content="Portfolio of Aariz Khan, a Computer Science Engineering student specializing in web development, scalable systems, and clean code.">
-    
+    <title>Aariz Khan | Tech Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div id="global-loader">
+        <div class="loader-content">
+            <i class="fa-solid fa-circle-notch fa-spin spinner-icon"></i>
+            <h2 class="loader-text" id="loader-text-msg">> Starting Blog...</h2>
+        </div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div id="reading-progress"></div>
+
+    <div class="top-bar anim-fade-down">
+        <i class="fa-solid fa-palette" id="theme-btn" title="Switch Theme"></i>
+    </div>
+
     <div class="container">
         <header class="scroll-reveal">
-            <span class="hero-label">Portfolio & Blog</span>
-            <h1>Hi, I'm <span class="highlight-text">Aariz Khan.</span></h1>
-            <p class="bio" id="short-bio"></p>
+            <span class="hero-label anim-fade-up">> System.out.println("Tech Journal");</span>
+            <h1 class="anim-fade-up delay-1">Hi, I'm <span class="highlight-text">Aariz Khan.</span></h1>
+            <p class="bio anim-fade-up delay-2" id="short-bio"></p>
             
-            <div class="action-buttons">
-                <a href="tel:+917000564354" class="primary-btn call-btn">
-                    <i class="fa-solid fa-phone"></i> Call Now
-                </a>
-                <a href="https://wa.me/917000564354" target="_blank" rel="noopener noreferrer" class="secondary-btn wa-btn">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            <div class="action-buttons anim-fade-up delay-3">
+                <a href="https://aariz-portfolio.onrender.com/" target="_blank" rel="noopener noreferrer" class="primary-btn">
+                    <i class="fa-solid fa-globe"></i> Main Portfolio
                 </a>
             </div>
         </header>
@@ -31,8 +42,8 @@
 
     <div class="container">
         <section id="about" class="scroll-reveal">
-            <div class="about-grid">
-                <div class="label">About Me</div>
+            <div class="about-grid anim-slide-right">
+                <div class="label"><i class="fa-solid fa-user-astronaut"></i> About the Author</div>
                 <div id="detailed-about" class="about-text-clean"></div>
             </div>
         </section>
@@ -40,10 +51,10 @@
 
     <div class="container">
         <section id="blog" class="scroll-reveal">
-            <div class="blog-header">
-                <h2>Featured Writings</h2>
-                <a href="https://medium.com/@muhammadaarizkhansocial" target="_blank" rel="noopener noreferrer" class="archive-btn">
-                    Read on Medium <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 5px;"></i>
+            <div class="blog-header anim-fade-up">
+                <h2><i class="fa-solid fa-pen-nib"></i> Featured Writings</h2>
+                <a href="https://medium.com/@muhammadaarizkhansocial" target="_blank" class="archive-btn">
+                    Read on Medium <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </div>
             
@@ -52,19 +63,52 @@
     </div>
 
     <div class="container">
+        <section id="contact" class="scroll-reveal">
+            <div class="blog-header anim-fade-up">
+                <h2><i class="fa-solid fa-terminal"></i> Get in Touch</h2>
+            </div>
+            <p class="terminal-msg anim-fade-up">> Waiting for connection...</p>
+            <form id="contact-form" class="minimal-form anim-scale-up glowing-box">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="primary-btn submit-btn">
+                    <i class="fa-solid fa-rocket"></i> Send Message
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <div class="container">
         <footer class="scroll-reveal">
-            <h2>Let's Connect</h2>
-            <div class="social-links">
-                <a href="mailto:muhammadaarizkhansocial@gmail.com" class="social-btn">
-                    <i class="fa-solid fa-envelope"></i> Email
+            <h2 class="anim-fade-up">Connect</h2>
+            <div class="social-links anim-fade-up delay-1">
+                <a href="https://github.com/Aariz-Khan18" target="_blank" class="social-btn github">
+                    <i class="fa-brands fa-github"></i> GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/aarizkhan18" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <a href="https://www.linkedin.com/in/aarizkhan18" target="_blank" class="social-btn linkedin">
                     <i class="fa-brands fa-linkedin-in"></i> LinkedIn
                 </a>
-                <a href="https://t.me/apke_papaji" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <a href="mailto:muhammadaarizkhansocial@gmail.com" class="social-btn email">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/917000564354" target="_blank" class="social-btn whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://t.me/apke_papaji" target="_blank" class="social-btn telegram">
                     <i class="fa-brands fa-telegram"></i> Telegram
                 </a>
             </div>
+            <p class="footer-credit anim-fade-up delay-2">Developed and Designed by <strong>Aariz Khan</strong></p>
         </footer>
     </div>
 
